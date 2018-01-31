@@ -1,1 +1,1 @@
-web: env PYTHONPATH=$PYTHONPATH:$PWD python biolink/app.py
+web: gunicorn -k gevent --worker-connections 5 wsgi:app

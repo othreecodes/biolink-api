@@ -76,7 +76,7 @@ db.init_app(app)
 #from ontobio.ontol_factory import OntologyFactory
 #factory = OntologyFactory()
 #ont = factory.create()
-    
+
 
 @app.route("/")
 def hello():
